@@ -75,7 +75,7 @@ MESSAGES_KO: dict[str, Any] = {
         "invalid_template": "❌ 유효하지 않은 템플릿입니다",
         "creating_project": "🚀 프로젝트를 생성하는 중...",
         "next_steps": "다음 단계",
-        "install_deps": "의존성 설치: pip install -r requirements.txt",
+        "install_deps": "의존성과 개발 의존성 설치",
         "setup_env": "환경변수 설정: cp .env.example .env",
         "run_migrations": "데이터베이스 마이그레이션: alembic upgrade head",
         "start_server": "서버 실행: litestar run --reload",
@@ -93,8 +93,8 @@ MESSAGES_KO: dict[str, Any] = {
         "list_templates": "템플릿 목록 보기",
         "help": "도움말",
         "create_venv": "가상환경 생성",
-        "install_deps": "의존성 설치",
-        "install_dev_deps": "개발 의존성 설치",
+        "install_deps": "의존성과 개발 의존성 설치",
+        "install_cmd": 'pip install -e ".[dev]"',
         "detailed_docs": "각 구조별 상세 문서는 해당 디렉토리의 README를 참고하세요.",
         "features": {
             "layered": {
@@ -234,8 +234,8 @@ MESSAGES_EN: dict[str, Any] = {
         "list_templates": "List templates",
         "help": "Help",
         "create_venv": "Create virtual environment",
-        "install_deps": "Install dependencies",
-        "install_dev_deps": "Install development dependencies",
+        "install_deps": "Install dependencies and dev dependencies",
+        "install_cmd": 'pip install -e ".[dev]"',
         "detailed_docs": "For detailed documentation of each structure, refer to the README in the respective directory.",
         "features": {
             "layered": {

@@ -90,10 +90,7 @@ source venv/bin/activate  # Linux/Mac
 # venv\\Scripts\\activate  # Windows
 
 # {t("readme.install_deps")}
-pip install -r requirements.txt
-
-# {t("readme.install_dev_deps")}
-pip install -r requirements-dev.txt
+{t("readme.install_cmd")}
 ```
 
 {t("readme.detailed_docs")}

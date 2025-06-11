@@ -1,5 +1,5 @@
 <p align="right">
-  <a href="README.md">🇺🇸 English</a> | 
+  <a href="README.md">🇺🇸 English</a> |
   <strong>🇰🇷 한국어</strong>
 </p>
 
@@ -80,11 +80,8 @@ python -m venv venv
 source venv/bin/activate  # Linux/Mac
 # venv\Scripts\activate  # Windows
 
-# 의존성 설치
-pip install -r requirements.txt
-
-# 개발 의존성 설치
-pip install -r requirements-dev.txt
+# 의존성과 개발 의존성 설치
+pip install -e ".[dev]"
 ```
 
 각 구조별 상세 문서는 해당 디렉토리의 README를 참고하세요.
