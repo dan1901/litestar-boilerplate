@@ -44,7 +44,7 @@ Thank you for your interest in contributing to the Litestar Boilerplate Collecti
 ### Setup Steps
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/litestar-boilerplate.git
+git clone https://github.com/dan1901/litestar-boilerplate.git
 cd litestar-boilerplate
 
 # Create virtual environment

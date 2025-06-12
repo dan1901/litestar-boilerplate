@@ -7,7 +7,7 @@
 
 🚀 현대적이고 확장 가능한 Python 웹 애플리케이션을 위한 프로덕션 레디 보일러플레이트
 
-[![CI/CD Pipeline](https://github.com/your-username/litestar-boilerplate/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/your-username/litestar-boilerplate/actions)
+[![CI/CD Pipeline](https://github.com/dan1901/litestar-boilerplate/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/dan1901/litestar-boilerplate/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Litestar](https://img.shields.io/badge/Litestar-2.0+-green.svg)](https://litestar.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
