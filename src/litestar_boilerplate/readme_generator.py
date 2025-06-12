@@ -35,9 +35,17 @@ class ReadmeGenerator:
 
 # {t("readme.title")}
 
+{t("readme.subtitle")}
+
+{self._format_badges()}
+
 {t("readme.description")}
 
-## {t("readme.architecture_types")}
+{t("readme.key_features")}
+
+{self._format_feature_points(t("readme.key_features_list"))}
+
+{t("readme.architecture_types")}
 
 ### 1. {t("readme.features.layered.title")} (`layered/`)
 {t("readme.features.layered.subtitle")}
@@ -51,11 +59,7 @@ class ReadmeGenerator:
 {t("readme.features.feature-based.subtitle")}
 {self._format_feature_points(t("readme.features.feature-based.points"))}
 
-## {t("readme.language_support")}
-
-{self._get_language_support_section()}
-
-## {t("readme.usage")}
+{t("readme.usage")}
 
 ```bash
 # {t("readme.install_cli")}
@@ -73,7 +77,11 @@ litestar-boilerplate list-templates
 litestar-boilerplate --help
 ```
 
-## {t("readme.requirements")}
+{t("readme.language_support")}
+
+{self._get_language_support_section()}
+
+{t("readme.requirements")}
 
 - Python 3.11+
 - Litestar 2.0+
@@ -81,7 +89,7 @@ litestar-boilerplate --help
 - Alembic
 - Pydantic V2
 
-## {t("readme.dev_setup")}
+{t("readme.dev_setup")}
 
 ```bash
 # {t("readme.create_venv")}
@@ -93,7 +101,19 @@ source venv/bin/activate  # Linux/Mac
 {t("readme.install_cmd")}
 ```
 
+{t("readme.litestar_resources")}
+
+{self._format_litestar_resources()}
+
 {t("readme.detailed_docs")}
+
+{t("readme.contributing")}
+
+{t("readme.contributing_content")}
+
+{t("readme.license")}
+
+{t("readme.license_content")}
 """
 
     def _get_language_selector(self) -> str:
@@ -149,6 +169,16 @@ litestar-boilerplate -l ko create --type layered --name my-app
 📋 **Multi-language README**:
 - [`README.md`](README.md) - 🇺🇸 English (GitHub default)
 - [`README.ko.md`](README.ko.md) - 🇰🇷 한국어 (Korean)"""
+
+    def _format_litestar_resources(self) -> str:
+        """Litestar 리소스 섹션을 포맷팅합니다."""
+        resources = t("readme.litestar_resources_content")
+        return "\n".join(resources)
+
+    def _format_badges(self) -> str:
+        """배지 섹션을 포맷팅합니다."""
+        badges = t("readme.badges")
+        return "\n".join(badges)
 
 
 def generate_readme_files(output_path: Path) -> None:
